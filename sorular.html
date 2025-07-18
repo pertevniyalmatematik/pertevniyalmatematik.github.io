@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+          function openSidebar() {
+    document.getElementById("sidebar").style.width = "25%";
+    document.getElementById("overlay").style.display = "block";
+  }
+
+  function closeSidebar() {
+    document.getElementById("sidebar").style.width = "0";
+    document.getElementById("overlay").style.display = "none";
+  }
+    </script>
+
+
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="navbar">
+  <div class="menu-icon" onclick="openSidebar()">&#9776;</div>
+  <div class="navbar-title">Pertevniyal Matematik Kulübü</div>
+</div>
+
+<!-- Karanlık Arka Plan -->
+<div class="overlay" id="overlay" onclick="closeSidebar()"></div>
+
+<!-- Açılan Menü Paneli -->
+<div id="sidebar" class="sidebar">
+  <a href="index.html">Ana Sayfa</a>
+  <a href="blog.html">Bloglar</a>
+  <a href="dergiler.html">Dergiler</a>
+  <a href="hakkımızda.html">Hakkımızda</a>
+  <a href="sorular.html">Sorular</a>
+  <a href="ispatlar.html">İspatlar</a>
+<div style="
+  display: flex;
+  margin-top: 20px;
+">
+<hr style="
+  width: 200px;
+  height: 4px;
+  background-color: #005b7d;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  margin-left: 20px;
+">
+</div>
+  <a href="index.html">Türkçe</a>
+  <a href="index_en.html">ingilizce</a>
+</div>
+
+
+<div style="display: flex; justify-content: center; margin-top: 30px;">
+  <h1 style="
+    font-size: 36px;
+    font-weight: 700;
+    color: #1e1e1e;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #005b7d;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+  ">
+    Sorular
+  </h1>
+</div>
+<br><br>
+
+
+<div style="
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 20px 25px;
+  background: linear-gradient(to right, #f9f9f9, #eaeaea);
+  border: 1.5px solid #ccc;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+">
+  <p style="
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+  ">
+    Bu sayfada her hafta 3 veya 4 çözülmüş veya hiç çözülmemiş sorular yayımlayarak çözenlerin
+    isimlerini ve nasıl çözdüklerini paylaşmayı amaçlıyoruz. Soruların çözümlerini en altta yer alan
+    email adresimize paylaşmanızı rica ederiz.
+  </p>
+</div>
+
+<div class="soru-gorsel-wrapper">
+  <div class="soru-gorsel">
+    <span class="soru-numara">1</span>
+    <img src="görseller/öclid_soru.png" alt="Soru Görseli">
+  </div>
+</div>
+
+
+<div class="soru-gorsel-wrapper">
+  <div class="soru-gorsel">
+    <span class="soru-numara">2</span>
+    <img src="görseller/stewart_soru.png" alt="Soru Görseli">
+  </div>
+</div>
+
+<div class="soru-gorsel-wrapper">
+  <div class="soru-gorsel">
+    <span class="soru-numara">3</span>
+    <img src="görseller/eular_soru.png" alt="Soru Görseli">
+  </div>
+</div>
+
+
+
+<div class="alt-buton-kapsayici">
+  <a href="çözenler.html">
+    <button class="alt-buton">Çözümler ve Çözenler</button>
+  </a>
+</div>
+
+<div class="alt-buton-kapsayici">
+  <a href="geçmiş sorular.html">
+    <button class="alt-buton">Geçmiş Sorular</button>
+  </a>
+</div>
+
+<div class="logo-kutu">
+  <div class="logo-blok">
+    <img src="görseller/Pertevniyal_Anadolu_Lisesi_Logosu-removebg-preview.png" alt="Pertevniyal Lisesi Logosu" class="logo-img">
+    <div class="logo-yazi">
+      <div>Pertevniyal</div>
+      <div>Lisesi</div>
+    </div>
+  </div>
+
+  <div class="logo-blok">
+    <img src="görseller/13.png" alt="Matematik Kulübü Logosu" class="logo-img">
+    <div class="logo-yazi">
+      <div>Pertevniyal</div>
+      <div>Matematik</div>
+      <div>Kulübü</div>
+    </div>
+  </div>
+</div>
+
+  
+<footer class="alt-footer">
+  <div class="footer-icerik">
+    <!-- Instagram -->
+    <a href="https://www.instagram.com/pertevniyalmatematikkulubu/?next=%2F" target="_blank">
+      <img src="görseller/instagram.png" alt="Instagram" width="30">
+    </a>
+
+        <span>
+pertevniyalmatematikkulubu</span>
+
+    <!-- E-posta -->
+    <span>pertevmatematik@gmail.com</span>
+  </div>
+</footer>
+
+
+</body>
+</html>
