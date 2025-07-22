@@ -688,81 +688,28 @@ body {
 
 @media (max-width: 768px) {
 
-  .navbar-title {
+  body {
     font-size: 16px;
   }
 
-  .menu-icon {
-    font-size: 22px;
-    left: 15px;
-  }
-
-  .sidebar a {
-    font-size: 16px;
-    padding: 12px 20px;
-  }
-
-  .paragraf,
-  .başlıklar {
-    width: 90%;
-    font-size: 16px;
-  }
-
-  .soru-gorsel img,
-  .soru-gorsel_geçmiş img {
-    width: 100%;
-  }
-
-  .soru-gorsel,
-  .soru-gorsel_geçmiş {
-    width: 90%;
-    padding: 8px;
-  }
-
-  .alt-buton {
-    font-size: 16px;
-    padding: 12px 24px;
-  }
-
-  .blog-karti {
-    flex-direction: column;
-    align-items: center;
-    padding: 15px;
-  }
-
-  .blog-gorsel img {
-    width: 100%;
+  .navbar {
+    flex-direction: row;
     height: auto;
-    margin-bottom: 15px;
+    padding: 10px;
   }
 
-  .blog-baslik {
-    margin-left: 0;
-    text-align: center;
+  .navbar-title {
+    font-size: 18px;
   }
 
-  .blog-baslik h2 {
-    font-size: 20px;
-  }
-
-  .anasayfa-alt-kisim {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .anasayfa-logo {
-    width: 150px;
-  }
-
-  .anasayfa-metinler {
-    font-size: 1rem;
-    text-align: center;
+  .sidebar {
+    padding-top: 60px;
   }
 
   .ispatla-kutu {
     flex-direction: column;
     gap: 20px;
+    padding: 16px;
   }
 
   .ispatla-gorsel img,
@@ -772,47 +719,53 @@ body {
   }
 
   .ispatla-metin {
-    padding: 15px;
     font-size: 16px;
+    padding: 10px;
     text-align: left;
   }
 
-  .logo-kutu {
+  .anasayfa-alt-kisim {
     flex-direction: column;
-    padding: 15px;
+    align-items: flex-start;
   }
 
-  .logo-blok {
-    flex: none;
+  .anasayfa-logo {
     width: 100%;
+    max-width: 300px;
+    margin-bottom: 20px;
+  }
+
+  .anasayfa-metinler {
+    font-size: 1rem;
+    text-align: left;
+  }
+
+  .blog-karti {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .blog-gorsel img {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+  }
+
+  .blog-baslik {
+    margin-left: 0;
+    margin-top: 15px;
+  }
+
+  .alt-buton,
+  .bloglar-buton {
+    font-size: 16px;
+    padding: 12px 24px;
   }
 
   .solution-box {
     flex-direction: column;
-    padding: 12px;
-  }
-
-  .question-number {
-    align-self: center;
-  }
-
-  .question-side img,
-  .answer-side img {
-    max-height: 250px;
-    width: 100%;
-  }
-
-  .blog-icerik-karti {
-    padding: 20px 16px;
-  }
-
-  .blog-icerik-karti h1 {
-    font-size: 2rem;
-  }
-
-  .blog-icerik-karti p,
-  .yazar {
-    font-size: 1rem;
+    padding: 16px;
   }
 
   .grup-icerik {
@@ -821,12 +774,206 @@ body {
 
   .grup-baslik {
     font-size: 1.5rem;
-    text-align: center;
   }
 
   .grup-paragraf {
     font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .logo-kutu {
+    flex-direction: column;
+    padding: 16px;
+  }
+
+  .logo-blok {
+    min-width: 100%;
+  }
+
+  .soru-gorsel img,
+  .soru-gorsel_geçmiş img {
+    width: 100%;
+    height: auto;
+  }
+
+  .paragraf,
+  .başlıklar {
+    width: 90%;
+    text-align: left;
+  }
+
+  .blog-icerik-karti {
+    padding: 20px 16px;
+  }
+
+  .blog-icerik-karti h1 {
+    font-size: 1.8rem;
+  }
+
+  .blog-icerik-karti p,
+  .yazar {
+    font-size: 1rem;
+  }
+
+  .ispatla-baslik {
+    font-size: 24px;
+  }
+
+  .menu-icon {
+    font-size: 22px;
+  }
+
+}
+@media (max-width: 1024px) {
+  .anasayfa-alt-kisim {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .blog-karti {
+    flex-direction: column;
+    max-width: 90%;
+    margin: 20px auto;
+  }
+
+  .blog-gorsel img {
+    width: 100%;
+    height: auto;
+  }
+
+  .blog-baslik {
+    margin-left: 0;
+    margin-top: 15px;
     text-align: center;
   }
 
+  .logo-kutu {
+    max-width: 100%;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .logo-blok {
+    min-width: auto;
+  }
+
+  .grup {
+    padding: 40px 15px;
+  }
+
+  .grup-icerik {
+    padding: 30px 20px;
+  }
+}
+
+/* Mobil ve altı (768px ve altı) */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  .navbar {
+    height: 50px;
+  }
+
+  .navbar-title {
+    font-size: 18px;
+  }
+
+  .menu-icon {
+    font-size: 22px;
+    left: 15px;
+  }
+
+  .ispatla-kutu {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .ispatla-gorsel img,
+  .ispatla-gorsel-sag img {
+    height: auto;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .ispatla-metin {
+    font-size: 15px;
+    text-align: left;
+    padding: 10px 0;
+  }
+
+  .grup {
+    padding: 30px 10px;
+  }
+
+  .grup-icerik {
+    padding: 25px 15px;
+  }
+
+  .grup-baslik {
+    font-size: 1.6rem;
+  }
+
+  .grup-paragraf {
+    font-size: 1rem;
+  }
+
+  .bloglar-buton {
+    font-size: 16px;
+    padding: 12px 24px;
+  }
+
+  .alt-buton {
+    font-size: 16px;
+    padding: 12px 24px;
+  }
+
+  .soru-gorsel {
+    max-width: 100%;
+    padding: 8px;
+  }
+
+  .soru-gorsel img {
+    width: 100%;
+    height: auto;
+  }
+
+  .alt-footer {
+    padding: 15px 10px;
+    font-size: 14px;
+  }
+
+  .paragraf, .başlıklar {
+    width: 90%;
+    margin: 20px auto;
+    font-size: 14px;
+  }
+
+  .blog-karti {
+    padding: 15px;
+  }
+
+  .blog-gorsel img {
+    width: 100%;
+    height: auto;
+  }
+
+  .blog-baslik h2 {
+    font-size: 20px;
+  }
+
+  .logo-kutu {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .logo-blok {
+    min-width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .logo-yazi {
+    font-size: 16px;
+  }
 }
